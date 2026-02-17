@@ -5,21 +5,25 @@
  * asterisks (*) and spaces via multiple print statements.
  *
  * @author Developer
- * @version 2.0
+ * @version 4.0
  */
 
-public class OOPSBannerApp{
-    public static void main(String[]args){
-        System.out.println(String.join("", "   ***   ","    ***    ","***** "));
-        System.out.println(String.join("", " **   **  "," **   **  ","****** "));
-        System.out.println(String.join("", "**     ** ","**     ** ","**   ** "));
-        System.out.println(String.join("", "**     ** ","**     ** ","**   ** "));
-        System.out.println(String.join("", "**     ** ","**     ** ","****** "));
-        System.out.println(String.join("", " **   **  "," **   **  ","** "));
-        System.out.println(String.join("", "   ***    ","   ***    ","** "));
 
+public class OOPSBannerApp {
+    public static void main(String[] args) {
 
+        String[][] oop = {
+            {"   ***   ", "    ***    ", "*****   ", "*********"  },
+            {" **   **  ", " **   **  ", "******  ", "*********"  },
+            {"**     ** ", "**     ** ", "**   ** ", "**" },
+            {"**     ** ", "**     ** ", "**   ** ", "*********" },
+            {"**     ** ", "**     ** ", "******  ", "      ***" },
+            {" **   **  ", " **   **  ", "**      ", "*********" },
+            {"   ***    ", "   ***    ", "**      ", "*********"}
+        };
 
-
+        for (int i = 0; i < oop.length; i++) {
+            System.out.println(String.join("   ", oop[i]));
+        }
     }
 }

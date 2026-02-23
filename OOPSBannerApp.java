@@ -8,7 +8,7 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
 
-        String[][] oop = {
+        String[] oop = {
             String.join("   ***   ", "    ***    ", "*****   ", "*********"  ),
             String.join(" **   **  ", " **   **  ", "******  ", "*********"  ),
             String.join("**     ** ", "**     ** ", "**   ** ", "**" ),
@@ -19,7 +19,7 @@ public class OOPSBannerApp {
         };
 
         for (int i = 0; i < oop.length; i++) {
-            System.out.println(String.join("   ", oop[i]));
+            System.out.println(oop[i]);
         }
     }
 }

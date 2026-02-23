@@ -1,25 +1,42 @@
-/**
- * OOPSBannerApp UC5 - Banner Display Application
- * @author Developer
- * @version 5.0
- */
+public class OOPSBannerApp{
+    static String[] getOPattern(){
+        return new String[]{
 
+            "   ***    ",
+            " **   **  ",
+            "**     ** ",
+            "**     ** ",
+            "**     ** ",
+            " **   **  ",
+            "   ***    ",
 
-public class OOPSBannerApp {
-    public static void main(String[] args) {
-
-        String[] oop = {
-            String.join("   ***   ", "    ***    ", "*****   ", "*********"  ),
-            String.join(" **   **  ", " **   **  ", "******  ", "*********"  ),
-            String.join("**     ** ", "**     ** ", "**   ** ", "**" ),
-            String.join("**     ** ", "**     ** ", "**   ** ", "*********" ),
-            String.join("**     ** ", "**     ** ", "******  ", "      ***" ),
-            String.join(" **   **  ", " **   **  ", "**      ", "*********" ),
-            String.join("   ***    ", "   ***    ", "**      ", "*********")
         };
+        
 
-        for (int i = 0; i < oop.length; i++) {
-            System.out.println(oop[i]);
+        }
+        static String[] getPPattern(){
+            return new String[]{
+            "***** ",
+            "****** ",
+            "**   ** ",
+            "**   ** ",
+            "****** ",
+            "** ",
+            "** ",
+            };
+        }
+        
+    public static void main(String[] args){
+
+        String[] oPattern = getOPattern();
+        String[] pPattern = getPPattern();
+        //String[] sPattern = getSPattern();
+
+
+
+        for(int i =0 ; i < oPattern.length; i++){
+            System.out.println(oPattern[i] + "" + oPattern[i] + "" + pPattern[i] + "");
+        }
+
         }
     }
-}
